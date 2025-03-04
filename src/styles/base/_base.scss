@@ -1,0 +1,232 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  line-height: 1;
+  font-family: $font-montreal !important;
+  background-color: $color-soft-cream;
+  color: $color-black;  
+  scroll-behavior: smooth;
+  height: auto;
+  $vw: 100vw;
+  font-size: calc($vw / 1440px * 16px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 18px);
+    overflow-x: hidden;
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 18px);
+  }
+}
+
+$vw: 100vw;
+
+h1 {
+  font-size: calc($vw / 1440px * 80px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 24px);
+  }
+  
+  @include media('<large') {
+    font-size: calc($vw / 1440px * 170px);
+  }
+  
+  @include media('<large-phone') {
+    font-size: calc($vw / 750px * 38px);
+  }
+}
+
+h2 {
+  font-size: calc($vw / 1440px * 64px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 32px);
+  }
+  
+  @include media('<large') {
+    font-size: calc($vw / 1440px * 88px);
+  }
+  
+  @include media('<large-phone') {
+    font-size: calc($vw / 750px * 24px);
+  }
+}
+
+h3 {
+  font-size: calc($vw / 1440px * 50px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 24px);
+  }
+  
+  @include media('<large') {
+    font-size: calc($vw / 1440px * 60px);
+  }
+  
+  @include media('<large-phone') {
+    font-size: calc($vw / 750px * 28px);
+  }
+}
+
+h4 {
+  font-size: calc($vw / 1440px * 40px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 32px);
+  }
+  
+  @include media('<large') {
+    font-size: calc($vw / 1440px * 48px);
+  }
+  
+  @include media('<large-phone') {
+    font-size: calc($vw / 750px * 32px);
+  }
+}
+
+h5 {
+  font-size: calc($vw / 1440px * 32px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 20px);
+  }
+}
+
+h6 {
+  font-size: calc($vw / 1440px * 25px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 18px);
+  }
+}
+
+h5.alt {
+  font-size: calc($vw / 1440px * 24px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 24px);
+  }
+}
+
+h6.small {
+  font-size: calc($vw / 1440px * 22px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 18px);
+  }
+}
+
+p {
+  font-size: calc($vw / 1440px * 18px);
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 18px);
+  }
+  
+  @include media('<large') {
+    font-size: calc($vw / 1440px * 20px);
+  }
+  
+  @include media('<large-phone') {
+    font-size: calc($vw / 750px * 20px);
+  }
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid $color-warm-white;
+  width: 100%;
+  padding: 12px;
+  color: $color-warm-white;
+  font-family: $font-montreal;
+  $vw: 100vw;
+  font-size: calc($vw / 1440px * 16px);
+  background: transparent;
+
+  @include media('<phone') {
+    font-size: calc($vw / 750px * 16px);
+  }
+
+  @include media('<small') {
+    font-size: calc($vw / 500px * 16px);
+  }
+
+  &[type='file'] {
+    width: 30%;
+
+    @include media('<small') {
+      width: 70%;
+    }
+  }
+
+  &::placeholder {
+    color: $color-warm-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-neon-pink;
+    outline: none;
+  }
+}
+
+button {
+  padding: 16px 30px;
+  color: $color-white;
+  border-radius: 20px;
+  background-color: $color-neon-pink;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &.white {
+    background-color: $color-warm-white;
+  }
+}
+
+.desktop {
+  display: auto !important;
+
+  @include media('<phone') {
+    display: none !important;
+  }
+}
+
+.phone {
+  display: none !important;
+  
+  @include media('<phone') {
+    display: block !important;
+  }
+}
+
+.deep-purple {
+  color: $color-deep-purple;
+}
+
+.neon-pink {
+  color: $color-neon-pink;
+}
+
+.soft-cream {
+  color: $color-soft-cream;
+}
