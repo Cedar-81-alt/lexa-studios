@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 *,
 *::after,
 *::before {
@@ -7,7 +9,7 @@
 
 html, body {
   line-height: 1;
-  font-family: $font-montreal !important;
+  font-family: $font-quintessential !important;
   background-color: $color-soft-cream;
   color: $color-black;  
   scroll-behavior: smooth;
@@ -28,117 +30,123 @@ html, body {
 $vw: 100vw;
 
 h1 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 80px);
+
+  &.lg {
+    font-size: calc($vw / 1440px * 170px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 24px);
-  }
-  
-  @include media('<large') {
-    font-size: calc($vw / 1440px * 170px);
-  }
-  
-  @include media('<large-phone') {
-    font-size: calc($vw / 750px * 38px);
+
+    &.lg {
+      font-size: calc($vw / 750px * 38px);
+    }
   }
 }
 
 h2 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 64px);
+
+  &.lg {
+    font-size: calc($vw / 1440px * 88px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 32px);
-  }
-  
-  @include media('<large') {
-    font-size: calc($vw / 1440px * 88px);
-  }
-  
-  @include media('<large-phone') {
-    font-size: calc($vw / 750px * 24px);
+
+    &.lg {
+      font-size: calc($vw / 750px * 24px);
+    }
   }
 }
 
 h3 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 50px);
+
+  &.lg {
+    font-size: calc($vw / 1440px * 60px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 24px);
-  }
-  
-  @include media('<large') {
-    font-size: calc($vw / 1440px * 60px);
-  }
-  
-  @include media('<large-phone') {
-    font-size: calc($vw / 750px * 28px);
+
+    &.lg {
+      font-size: calc($vw / 750px * 28px);
+    }
   }
 }
 
 h4 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 40px);
+
+  &.lg {
+    font-size: calc($vw / 1440px * 48px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 32px);
-  }
-  
-  @include media('<large') {
-    font-size: calc($vw / 1440px * 48px);
-  }
-  
-  @include media('<large-phone') {
-    font-size: calc($vw / 750px * 32px);
+
+    &.lg {
+      font-size: calc($vw / 750px * 32px);
+    }
   }
 }
 
 h5 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 32px);
+
+  &.alt {
+    font-size: calc($vw / 1440px * 24px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 20px);
+
+    &.alt {
+      font-size: calc($vw / 750px * 24px);
+    }
   }
 }
 
 h6 {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 25px);
 
-  @include media('<phone') {
-    font-size: calc($vw / 750px * 18px);
+  &.small {
+    font-size: calc($vw / 1440px * 22px);
   }
-}
-
-h5.alt {
-  font-size: calc($vw / 1440px * 24px);
-
-  @include media('<phone') {
-    font-size: calc($vw / 750px * 24px);
-  }
-}
-
-h6.small {
-  font-size: calc($vw / 1440px * 22px);
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 18px);
+
+    &.small {
+      font-size: calc($vw / 750px * 18px);
+    }
   }
 }
 
 p {
+  $vw: 100vw;
   font-size: calc($vw / 1440px * 18px);
+
+  &.lg {
+    font-size: calc($vw / 1440px * 20px);
+  }
 
   @include media('<phone') {
     font-size: calc($vw / 750px * 18px);
-  }
-  
-  @include media('<large') {
-    font-size: calc($vw / 1440px * 20px);
-  }
-  
-  @include media('<large-phone') {
-    font-size: calc($vw / 750px * 20px);
+
+    &.lg {
+      font-size: calc($vw / 750px * 20px);
+    }
   }
 }
-
 
 a {
   color: inherit;
@@ -156,17 +164,17 @@ input, textarea {
   width: 100%;
   padding: 12px;
   color: $color-warm-white;
-  font-family: $font-montreal;
+  font-family: $font-quintessential;
   $vw: 100vw;
-  font-size: calc($vw / 1440px * 16px);
+  font-size: calc($vw / 1440px * 20px);
   background: transparent;
 
   @include media('<phone') {
-    font-size: calc($vw / 750px * 16px);
+    font-size: calc($vw / 750px * 20px);
   }
 
   @include media('<small') {
-    font-size: calc($vw / 500px * 16px);
+    font-size: calc($vw / 500px * 20px);
   }
 
   &[type='file'] {

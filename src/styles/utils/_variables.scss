@@ -9,7 +9,10 @@ $color-white: #FFFFFF;
 $color-black: #000000;
 
 
-$font-montserrat: "Montserrat";
-$font-montreal: "Neue Montreal";
+
+$font-urbanist: "Urbanist";
+$font-quintessential: "Quintessential";
+
+@debug $font-quintessential;
 
 $z-indexes: ('modal', 'nav', 'logo', 'hamburger', 'aside', 'content', 'bg');

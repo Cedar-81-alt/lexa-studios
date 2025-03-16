@@ -73,6 +73,17 @@
   }
 }
 
+@mixin urbanist-font($uniquifier, $weight) {
+  .urbanist-#{$uniquifier} {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+
+
 @mixin section-grid($padding, $cols: 1, $gap: 2rem) {
   display: grid;
   grid-template-columns: repeat($cols, minmax(0, 1fr));
