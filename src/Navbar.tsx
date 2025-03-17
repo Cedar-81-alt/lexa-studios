@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         </button>
 
         {/* Left-aligned Links - Moved Down with mt-16 */}
-        <ul className="mt-16 flex flex-col space-y-6 text-lg font-medium uppercase tracking-wide items-start text-left pl-4">
+        <ul className="mt-32 flex flex-col space-y-6 text-lg font-medium uppercase tracking-wide items-start text-left pl-4">
           <li><Link to="/" className="hover:text-purple-600 dark:hover:text-purple-400">About</Link></li>
           <li><Link to="/services" className="hover:text-purple-600 dark:hover:text-purple-400">Services</Link></li>
           <li><Link to="/works" className="hover:text-purple-600 dark:hover:text-purple-400">Works</Link></li>
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         {/* Dark Mode Toggle (Inside Mobile Menu) */}
         <button
           onClick={toggleDarkMode}
-          className={`relative flex items-center w-24 h-10 rounded-full transition-all duration-300 ${
+          className={`relative flex mt-7 md:mt-0 items-center w-24 h-10 rounded-full transition-all duration-300 ${
             darkMode ? "bg-[#FDF8E6]" : "bg-[#3D1D5A]"
           }`}
         >
