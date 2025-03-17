@@ -42,31 +42,31 @@ const Footer = () => {
       <div className="border-t-2 border-white my-8"></div>
       
       {/* Navigation & Socials */}
-      <div className=" justify-between md:items-center item-end w-full">
+      <div className=" justify-between  md:items-center item-end w-full">
         {/* Left Side - Links */}
-        <div className=" md:space-x-6 space-x-2   text-[#DDDDDD]">
-          <Link to="/about">ABOUT</Link>
-          <Link to="/services" className="hover:underline">SERVICES</Link>
-          <Link to="/works" className="hover:underline">WORKS</Link>
-          <Link to="/contact" className="hover:underline">CONTACT</Link>
+        <div className="  flex flex-col md:flex md:space-x-10 mb-0 md:mb-10 md:flex-row md:space-y-0 space-y-10 text-[#DDDDDD]">
+          <Link to="/about" className="hover:underline md:ml-0 ml-64 text-left">ABOUT</Link>
+          <Link to="/services" className="hover:underline  md:ml-0 ml-64">SERVICES</Link>
+          <Link to="/works" className="hover:underline  md:ml-0 ml-64">WORKS</Link>
+          <Link to="/contact" className="hover:underline md:ml-0 ml-64">CONTACT</Link>
         </div>
         
         {/* Right Side - Social Media */}
-        <div className="md:flex flex-none flex-wrap md:gap-32 gaps-5 justify-start w-full mt-4 md:mt-4">
-          <a href="#" className="flex items-center md:space-x-7 space-x-3  hover:underline">
-            <span className="">INSTAGRAM</span> <FaInstagram />
+        <div className="md:flex flex-none flex-wrap md:gap-32 gaps-5 md:space-y-0 space-y-10 justify-start w-full -mt-44 md:mt-4">
+          <a href="#" className="flex items-center md:space-x-7  hover:underline">
+            <span className=" mr-10  md:mr-0">INSTAGRAM</span> <FaInstagram />
           </a>
-          <a href="#" className="flex items-center md:space-x-7 space-x-10 mt-5 md:mt-0 hover:underline">
-            <span>TWITTER </span> <FaXTwitter />
+          <a href="#" className="flex  md:space-x-7 items-center mt-5 md:mt-0 hover:underline">
+            <span className=" mr-14  md:mr-0">TWITTER </span> <FaXTwitter />
           </a>
-          <a href="#" className="flex items-center md:space-x-7 space-x-8  mt-5 md:mt-0 hover:underline">
-            <span>BEHANCE</span> <FaBehance />
+          <a href="#" className="flex items-center  md:space-x-7 mt-5 md:mt-0 hover:underline">
+            <span className="mr-14  md:mr-0">BEHANCE</span> <FaBehance />
           </a>
-          <a href="#" className="flex items-center  md:space-x-7 space-x-8  mt-5 md:mt-0 hover:underline">
-            <span>DRIBBBLE</span> <FaDribbble />
+          <a href="#" className="flex items-center   md:space-x-7  mt-5 md:mt-0 hover:underline">
+            <span className="mr-14  md:mr-0">DRIBBBLE</span> <FaDribbble />
           </a>
-          <a href="#" className="flex items-center md:space-x-7 space-x-6  mt-5 md:mt-0 hover:underline">
-            <span>PINTEREST</span> <FaPinterest />
+          <a href="#" className="flex items-center  md:space-x-7 mt-5 md:mt-0 hover:underline">
+            <span className="mr-12 md:mr-0">PINTEREST</span> <FaPinterest />
           </a>
         </div>
       </div>
