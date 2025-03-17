@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         </ul>
 
         {/* Dark Mode Toggle (Inside Mobile Menu) */}
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex justify-start">
           <button
             onClick={toggleDarkMode}
             className={`relative flex items-center w-24 h-10 rounded-full transition-all duration-300 ${
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
             {/* Toggle Circle */}
             <div
               className={`absolute w-6 h-6 rounded-full bg-white shadow-md transition-all duration-300 ${
-                darkMode ? "translate-x-[28px]" : "translate-x-[-28px]"
+                darkMode ? "translate-x-[22px] md:translate-x-[28px]" : "md:translate-x-[-28px] translate-x-[-22px]"
               }`}
             />
           </button>
