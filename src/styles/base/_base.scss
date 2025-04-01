@@ -15,7 +15,7 @@ html, body {
   color: $color-black;  
   scroll-behavior: smooth;
   height: auto;
-  $vw: 100vw;
+  $vw: 100vw; 
   font-size: calc($vw / 1440px * 16px);
 
   @include media('<phone') {

@@ -9,7 +9,7 @@ interface Params {
 function ServicesCard({ svg, title, content }: Params) {
   return (
     <div className="flex gap-6">
-      {svg}
+      <div>{svg}</div>
       <div className="space-y-2">
         <h5>{title}</h5>
         <p className="urbanist-light leading-snug">{content}</p>

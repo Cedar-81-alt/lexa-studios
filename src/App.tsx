@@ -28,7 +28,7 @@ function App() {
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
-    <div className="dark:bg-dark-violet m-0 min-h-screen border border-transparent">
+    <div className="dark:bg-dark-violet bg-white m-0 min-h-screen border border-transparent">
       <div className="flex flex-col border-x border-t px-10 rounded-b-none border-neon-pink mx-5 rounded-md overflow-clip mt-5">
         {/* Pass darkMode state to Navbar */}
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
