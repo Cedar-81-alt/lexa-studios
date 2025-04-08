@@ -1,4 +1,3 @@
-import React from "react";
 import CreativeCard from "./CreativeCard";
 
 function Hero() {
@@ -33,7 +32,7 @@ function Hero() {
   return (
     <section className="space-y-10 mt-10">
       <h1 className="text-neon-pink">OUR CREATIVE FORCE</h1>
-      <div className="overflow-x-auto flex gap-8">
+      <div className="overflow-x-auto flex flex-col lg:flex-row gap-20 lg:gap-8">
         {creatives.map((item, idx) => (
           <CreativeCard key={idx} item={item} />
         ))}

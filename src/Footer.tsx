@@ -11,32 +11,32 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#4B0076] text-white p-8  w-full urbanist-regular">
-      <div className="flex flex-col md:flex-row  justify-between items-start">
+    <footer className="bg-[#4B0076] text-white p-8 w-full urbanist-regular">
+      <div className="flex flex-col md:flex-row space-y-8  justify-between items-start">
         {/* Left Side */}
         <div className="text-left">
           <h4>Ready to get started?</h4>
-          <p className="mt-2">
+          <p className="mt-4">
             Fill in the form and we will contact you right away!
           </p>
         </div>
 
         {/* Right Side - Form */}
-        <div className=" md:mt-0">
+        <div className=" space-y-2 md:mt-0">
           <form className="space-y-4">
             <input
               type="text"
               placeholder="Name"
-              className="w-full border-b-2 border-white p-2 bg-transparent outline-none placeholder-white"
+              className="w-full border-b border-white/40 p-2 py-6 bg-transparent outline-none placeholder-white"
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full border-b-2 border-white p-2 bg-transparent outline-none placeholder-white"
+              className="w-full border-b border-white/40 p-2 py-6 bg-transparent outline-none placeholder-white"
             />
             <textarea
               placeholder="Type your message here"
-              className="w-full border-b-2 border-white p-2 bg-transparent outline-none placeholder-white"
+              className="w-full border-b border-white/40 p-2 py-6 bg-transparent outline-none placeholder-white"
             />
           </form>
           <div>
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="md:w-2/3 mb-10 md:mt-0 mt-10  flex flex-col md:flex-row justify-between items-start">
+      <div className="md:w-2/3 mb-10 md:mt-0 mt-20  flex flex-col md:flex-row justify-between items-start">
         {/* LEXA Logo */}
         <img src={LEXADESIGN} alt="" className="w-20" />
       </div>

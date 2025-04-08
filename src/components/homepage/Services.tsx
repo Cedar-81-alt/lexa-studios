@@ -21,7 +21,7 @@ function Services() {
   ];
   return (
     <section className="space-y-20">
-      <div className="grid xl:grid-cols-3 !gap-x-10 border-t border-t-neon-pink mt-26 pt-10">
+      <div className="grid lg:grid-cols-3 !gap-10 border-t border-t-neon-pink mt-26 pt-10">
         {items.splice(0, 3).map((item) => (
           <ServicesCard
             svg={item.svg}
@@ -30,7 +30,7 @@ function Services() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 !gap-x-10 border-t border-t-neon-pink pt-10">
+      <div className="grid lg:grid-cols-3 !gap-10 border-t border-t-neon-pink pt-10">
         {items.map((item) => (
           <ServicesCard
             svg={item.svg}

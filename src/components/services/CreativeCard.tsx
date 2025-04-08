@@ -12,7 +12,7 @@ interface Params {
 function CreativeCard({ item }: Params) {
   return (
     <div className="space-y-6 text-royal-purple dark:text-warm-white">
-      <div className="h-[20rem] w-[18rem] object-cover relative overflow-clip">
+      <div className="h-[30rem] lg:h-[20rem] lg:w-[18rem] object-cover relative rounded-md overflow-clip">
         <img src={item.img} className="w-full h-full object-cover absolute" />
       </div>
       <div className="space-y-6 urbanist-light">

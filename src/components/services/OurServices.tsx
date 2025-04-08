@@ -22,7 +22,7 @@ function OurServices() {
     },
   ];
   return (
-    <section className="flex gap-20 items-center h-[62rem] mt-20 border-t border-t-neon-pink">
+    <section className="gap-20 hidden lg:flex items-center h-[62rem] mt-20 border-t border-t-neon-pink">
       <div className="space-y-20 flex flex-col h-full justify-between">
         <h1 className="relative w-max mt-10 text-neon-pink leading-snug">
           OUR{" "}

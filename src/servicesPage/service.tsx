@@ -11,7 +11,7 @@ function Services() {
         <Navbar />
       </div> */}
       <Hero />
-      <div className="mt-26 space-y-26">
+      <div className="mt-26 space-y-10 lg:space-y-26">
         <OurServices />
         <WorkWithUs />
         <Faqs />

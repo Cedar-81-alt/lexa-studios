@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ setSelectedTag, selectedTag }) => {
 
   return (
     <section className="urbanist-regular space-y-5 py-8 ">
-      <div className="w-[50%] space-y-2">
+      <div className="lg:w-[50%] space-y-2">
         <h1 className="urbanist-medium dark:text-neon-pink">OUR CREATIONS</h1>
         <h5 className="alt leading-snug">
           At Lexxa, we are passionate about creating stunning, one-of-a-kind
@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ setSelectedTag, selectedTag }) => {
           glimpse into our latest creation.
         </h5>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 flex-wrap">
         {categories.map((category) => (
           <button
             key={category}

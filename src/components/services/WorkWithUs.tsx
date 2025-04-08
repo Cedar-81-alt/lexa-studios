@@ -2,9 +2,9 @@ import React from "react";
 
 function WorkWithUs() {
   return (
-    <section className="flex items-center space-x-10 mt-20 py-10 justify-between leading-snug">
+    <section className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 mt-20 py-10 justify-between leading-snug">
       <h1 className="text-neon-pink uppercase">
-        Ready To <br />
+        Ready To <br className="hidden lg:block" />
         Work With Us?
       </h1>
       <div className="space-y-4 dark:text-white">

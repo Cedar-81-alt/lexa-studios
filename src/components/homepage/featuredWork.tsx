@@ -1,12 +1,14 @@
 import clsx from "clsx";
+import { useEffect, useRef, useState } from "react";
 
 function FeaturedWork() {
   return (
-    <div className="flex mb-24 mt-24">
-      <h3 className="text-neon-pink w-[40%] border-r border-r-neon-pink">
+    <div className="lg:flex mb-24 mt-24 space-y-10 lg:space-y-0">
+      <h3 className="text-neon-pink w-[40%] lg:border-r border-r-neon-pink">
         FEATURED WORK
       </h3>
-      <div className="flex-1 pl-5 space-y-10 w-[60%]">
+
+      <div className="flex-1 pl-5 space-y-10 lg:w-[60%]">
         <div>
           <div className="h-[30rem] w-full relative object-center overflow-clip rounded-xl">
             <img
@@ -128,8 +130,8 @@ function FeaturedWork() {
           </div>
         </div>
         <ul className="border border-neon-pink/50" />
-        <div className="flex gap-10">
-          <div className="w-[48%]">
+        <div className="lg:flex gap-10 space-y-10 lg:space-y-0">
+          <div className="lg:w-[48%]">
             <div className="relative h-[30rem] bg-black rounded-xl overflow-clip">
               <div className="flex flex-col gap-2 absolute bottom-5 left-5 z-20">
                 {["WEB DESIGN", "BRANDING", "DIGITAL"].map((category, idx) => (
@@ -182,7 +184,7 @@ function FeaturedWork() {
             </div>
           </div>
 
-          <div className="w-[48%]">
+          <div className="lg:w-[48%]">
             <div className="relative h-[30rem] bg-black rounded-xl overflow-clip">
               <div className="flex flex-col gap-2 absolute bottom-5 left-5 z-20">
                 {["WEB DESIGN", "BRANDING", "DIGITAL"].map((category, idx) => (
@@ -236,8 +238,8 @@ function FeaturedWork() {
           </div>
         </div>
         <ul className="border border-neon-pink/50" />
-        <div className="flex gap-10">
-          <div className="w-[48%]">
+        <div className="lg:flex gap-10 space-y-10 lg:space-y-0">
+          <div className="lg:w-[48%]">
             <div className="relative h-[30rem] bg-black rounded-xl overflow-clip">
               <div className="flex flex-col gap-2 absolute bottom-5 left-5 z-20">
                 {["WEB DESIGN", "BRANDING", "DIGITAL"].map((category, idx) => (
@@ -289,7 +291,7 @@ function FeaturedWork() {
               </div>
             </div>
           </div>
-          <div className="w-[48%]">
+          <div className="lg:w-[48%]">
             <div className="relative h-[30rem] bg-black rounded-xl overflow-clip">
               <div className="flex flex-col gap-2 absolute bottom-5 left-5 z-20">
                 {["WEB DESIGN", "BRANDING", "DIGITAL"].map((category, idx) => (

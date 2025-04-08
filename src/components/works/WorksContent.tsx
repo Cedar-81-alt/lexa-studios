@@ -49,13 +49,13 @@ const WorksContent: React.FC<WorksContentProps> = ({ selectedTag }) => {
       : works.filter((work) => work.tags.includes(selectedTag));
 
   return (
-    <section className=" space-y-10 overflow-y-auto">
+    <section className="space-y-10 overflow-y-auto">
       {filteredWorks.length === 0 ? (
         <p className="text-gray-500">No works found for "{selectedTag}"</p>
       ) : (
         filteredWorks.map((work, idx) => (
           <div
-            className="flex space-x-10 border-t justify-between border-t-gray-50/20 pt-10"
+            className="flex flex-col lg:flex-row gap-10 border-t justify-between border-t-gray-50/20 pt-10"
             key={idx}
           >
             <div className="urbanist-regular space-y-4">

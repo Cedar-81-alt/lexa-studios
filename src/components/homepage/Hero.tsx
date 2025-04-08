@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="flex gap-4 py-10">
+    <section className="flex flex-col-reverse lg:flex-row gap-4 py-10">
       <div className="flex-1 space-y-8">
         <div className="space-y-2">
           <h3 className="lg text-neon-pink">
@@ -18,7 +18,13 @@ function Hero() {
           <p>Get in touch</p>
         </button>
       </div>
-      <img src="./images/homeimg1.png" className="flex-1" />
+
+      <div className="relative min-h-[16rem] rounded-2xl overflow-clip flex-1 object-cover">
+        <img
+          src="./images/homeimg1.png"
+          className="absolute top-0 right-0 object-cover h-full w-full"
+        />
+      </div>
     </section>
   );
 }

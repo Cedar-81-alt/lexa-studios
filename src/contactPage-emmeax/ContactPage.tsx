@@ -9,10 +9,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="text-black dark:text-white p-8 ">
+    <section className="text-black dark:text-white py-8 space-y-20">
       {/* First Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-1/2 text-[#B743C6] text-left">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div className="w-full md:w-1/2 text-[#B743C6] text-left">
           <h2 className="heading-2 mb-5 urbanist-medium font-semibold leading-tight">
             WANT TO{" "}
             <span className=" font-light italic quintessential-regular">
@@ -34,12 +34,12 @@ const ContactSection = () => {
             </span>
           </h2>
 
-          <button className="mt-36 urbanist-regular bg-[#B066B6] text-white px-6 py-3 rounded-sm">
+          <button className="mt-10 urbanist-regular bg-[#B066B6] text-white px-6 py-3 rounded-sm">
             Book a call
           </button>
         </div>
 
-        <div className="md:w-1/2 flex justify-end mt-6 md:mt-0">
+        <div className="md:w-1/2 flex justify-end mt-10 md:mt-0">
           <img
             src="https://res.cloudinary.com/ddjnrebkn/image/upload/v1741222123/image_14_d3dfhz.png"
             alt="Shirts Collection"
@@ -59,7 +59,7 @@ const ContactSection = () => {
             Someone from our team would contact you within 24 hours.
           </p>
         </div>
-        <div className="md:w-1/2 mt-6 md:mt-0 urbanist-regular">
+        <div className="w-full md:w-1/2 mt-6 md:mt-0 urbanist-regular">
           <form className="space-y-4">
             <div>
               <label className="block text-black dark:text-white mb-1">
@@ -67,7 +67,7 @@ const ContactSection = () => {
               </label>
               <input
                 type="text"
-                className="w-full border-b-2 text-black border-black dark:border-warm-white/30 p-3 bg-transparent outline-none"
+                className="w-full border-b text-black border-black/10 dark:border-warm-white/30 p-3 bg-transparent outline-none"
               />
             </div>
 
@@ -77,7 +77,7 @@ const ContactSection = () => {
               </label>
               <input
                 type="email"
-                className="w-full border-b-2 text-black border-black dark:border-warm-white/30 p-3 bg-transparent outline-none"
+                className="w-full border-b text-black border-black/10 dark:border-warm-white/30 p-3 bg-transparent outline-none"
               />
             </div>
 
@@ -85,7 +85,7 @@ const ContactSection = () => {
               <label className="block text-black dark:text-white mb-1">
                 Type your message here
               </label>
-              <textarea className="w-full border-b-2 border-black dark:border-warm-white/30 p-5 bg-transparent outline-none text-black" />
+              <textarea className="w-full border-b border-black/10 dark:border-warm-white/30 p-5 bg-transparent outline-none text-black" />
             </div>
             <button className="mt-4 bg-[#B066B6] text-white px-6 py-2 rounded-sm">
               Send a message
@@ -99,10 +99,10 @@ const ContactSection = () => {
 
       {/* FAQ Section */}
       <div className="flex flex-col md:flex-row items-start justify-between">
-        <div className="md:w-1/2 text-[#B066B6] text-left">
+        <div className="w-full md:w-1/2 text-[#B066B6] text-left">
           <h3 className="text-2xl font-bold">FAQs</h3>
         </div>
-        <div className="md:w-1/2 mt-6 md:mt-0 space-y-4">
+        <div className="w-full md:w-1/2 mt-6 md:mt-0 space-y-4">
           {[
             {
               question: "How long does a project take?",
@@ -120,8 +120,11 @@ const ContactSection = () => {
                 "Yes, we offer revisions to ensure the final product meets your expectations.",
             },
           ].map((faq, index) => (
-            <div key={index} className="border-b-2 border-gray-3 00 pb-4">
-              <div className="flex justify-between items-center">
+            <div key={index} className="border-b border-gray-3 00 pb-4">
+              <div
+                onClick={() => toggleFaq(index)}
+                className="flex justify-between items-center"
+              >
                 <h4 className="font-bold text-lg">{faq.question}</h4>
                 <button
                   className="text-[#B066B6] text-lg font-bold"
@@ -131,7 +134,9 @@ const ContactSection = () => {
                 </button>
               </div>
               {openFaq === index && (
-                <p className="text-black mt-2">{faq.answer}</p>
+                <p className="text-black mt-2 dark:text-soft-cream">
+                  {faq.answer}
+                </p>
               )}
             </div>
           ))}

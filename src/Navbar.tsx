@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <nav className="relative urbanist-regular flex justify-between items-center  py-4 bg-white dark:bg-dark-violet text-black dark:text-white border-b-[2px] border-gray-400">
+    <nav className="relative urbanist-regular flex justify-between items-center  py-4 bg-white dark:bg-dark-violet text-black dark:text-white border-b-2 border-[#B743C6]/50">
       <div className="flex items-center gap-4">
         <img src={LEXADESIGN} alt="Lexa Design" className="w-24" />
       </div>
@@ -97,26 +97,29 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
       </div>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden z-50" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      <button
+        className="md:hidden z-50 text-[#B743C6] py-3"
+        onClick={toggleMobileMenu}
+      >
+        {isMobileMenuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
       </button>
 
       {/* Mobile Menu (Sliding In) */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-[#27013D] shadow-lg flex flex-col px-6 py-6 transform ${
+        className={`fixed z-50 top-0 right-0 h-full w-64 bg-white dark:bg-[#27013D] shadow-lg flex flex-col px-6 py-6 transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         {/* Close Button */}
         <button
           onClick={toggleMobileMenu}
-          className="absolute top-5 right-5 text-3xl"
+          className="absolute top-5 text-[#B743C6] pt-6 pr-6 right-5 text-3xl bg-none"
         >
           <FaTimes />
         </button>
 
         {/* Left-aligned Links - Moved Down with mt-32 */}
-        <ul className="mt-32 flex flex-col space-y-6 text-lg font-medium uppercase tracking-wide items-start text-left pl-4">
+        <ul className="mt-20 flex flex-col  space-y-6 text-lg font-medium uppercase tracking-wide items-start text-left pl-4">
           <li>
             <Link
               to="/"
