@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useEffect, useRef, useState } from "react";
 
 function FeaturedWork() {
   return (
@@ -8,7 +7,7 @@ function FeaturedWork() {
         FEATURED WORK
       </h3>
 
-      <div className="flex-1 pl-5 space-y-10 lg:w-[60%]">
+      <div className="flex-1 lg:pl-5 space-y-10 lg:w-[60%]">
         <div>
           <div className="h-[30rem] w-full relative object-center overflow-clip rounded-xl">
             <img
@@ -36,7 +35,7 @@ function FeaturedWork() {
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
-                className="dark:text-white"
+                className="dark:text-white h-4 lg:h-8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -99,7 +98,7 @@ function FeaturedWork() {
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
-                className="dark:text-white"
+                className="dark:text-white h-4 lg:h-8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -153,7 +152,7 @@ function FeaturedWork() {
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
-                  className="dark:text-white"
+                  className="dark:text-white h-4 lg:h-8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -206,7 +205,7 @@ function FeaturedWork() {
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
-                  className="dark:text-white"
+                  className="dark:text-white h-4 lg:h-8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -261,7 +260,7 @@ function FeaturedWork() {
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
-                  className="dark:text-white"
+                  className="dark:text-white h-4 lg:h-8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -313,7 +312,7 @@ function FeaturedWork() {
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
-                  className="dark:text-white"
+                  className="dark:text-white h-4 lg:h-8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >

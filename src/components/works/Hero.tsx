@@ -16,6 +16,8 @@ const Hero: React.FC<HeroProps> = ({ setSelectedTag, selectedTag }) => {
     "Website Design",
   ];
 
+  // console.log(selectedTag, category);
+
   return (
     <section className="urbanist-regular space-y-5 py-8 ">
       <div className="lg:w-[50%] space-y-2">
@@ -34,10 +36,10 @@ const Hero: React.FC<HeroProps> = ({ setSelectedTag, selectedTag }) => {
               setSelectedTag(category);
             }}
             className={clsx(
-              "px-6 py-2 rounded-lg cursor-pointer border border-gray-50/20 bg-transparent hover:bg-neon-pink transition",
+              "px-6 py-2 rounded-lg cursor-pointer border border-black/20 dark:border-gray-50/20 bg-transparent hover:bg-neon-pink transition",
               category === selectedTag
-                ? "bg-neon-pink text-white"
-                : "text-white"
+                ? "bg-neon-pink text-black dark:text-white"
+                : "text-black dark:text-white"
             )}
           >
             <p>{category}</p>

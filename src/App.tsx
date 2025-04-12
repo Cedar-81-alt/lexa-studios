@@ -36,8 +36,8 @@ function App() {
         {/* Entire Page follows Dark Mode */}
         <main className="flex-1 bg-white leading-snug dark:bg-dark-violet text-black dark:text-white">
           <Routes>
-            <Route path="/contact" element={<ContactPage />} />
             <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/works" element={<Works />} />

@@ -125,6 +125,14 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
               to="/"
               className="hover:text-purple-600 dark:hover:text-purple-400"
             >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="hover:text-purple-600 dark:hover:text-purple-400"
+            >
               About
             </Link>
           </li>

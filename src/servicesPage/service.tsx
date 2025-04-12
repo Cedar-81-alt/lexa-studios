@@ -1,5 +1,4 @@
 import Hero from "../components/services/Hero";
-import Navbar from "../components/Navbar";
 import OurServices from "../components/services/OurServices";
 import WorkWithUs from "../components/services/WorkWithUs";
 import Faqs from "../components/services/Faqs";

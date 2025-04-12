@@ -54,7 +54,7 @@ const ContactSection = () => {
       {/* Second Section */}
       <div className="flex flex-col md:flex-row items-start urbanist-regular justify-between">
         <div className="md:w-1/2 text-[#B066B6] text-left">
-          <h5 className="">Send us a message here</h5>
+          <h4 className="">Send us a message here</h4>
           <p className="text-black dark:text-white mt-2">
             Someone from our team would contact you within 24 hours.
           </p>
