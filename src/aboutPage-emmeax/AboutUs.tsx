@@ -40,7 +40,7 @@ const LexaDesignPage = () => {
         ].map((item, index) => (
           <button
             key={index}
-            className="border px-4 py-2 rounded-md hover:bg-[#B743C6] hover:text-white"
+            className="border px-4 py-2 rounded-md text-black dark:text-white hover:bg-[#B743C6] hover:text-white"
           >
             {item}
           </button>

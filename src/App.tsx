@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="dark:bg-dark-violet bg-white m-0 min-h-screen border border-transparent">
-      <div className="flex flex-col border-x border-t px-10 rounded-b-none border-neon-pink mx-5 rounded-md overflow-clip mt-5">
+      <div className="flex flex-col border-x border-t px-4 lg:px-10 rounded-b-none border-neon-pink mx-5 rounded-md overflow-clip mt-5">
         {/* Pass darkMode state to Navbar */}
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 

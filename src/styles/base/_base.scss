@@ -39,7 +39,7 @@ h1 {
   }
 
   @media (max-width: 768px) {
-    font-size: calc($vw / 750px * 24px);
+    font-size: calc($vw / 750px * 32px);
 
     &.lg {
       font-size: calc($vw / 750px * 38px);

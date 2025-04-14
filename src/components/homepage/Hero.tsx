@@ -14,7 +14,7 @@ function Hero() {
             </span>
           </p>
         </div>
-        <button className="rounded-md py-3 px-6">
+        <button className="rounded-md bg-neon-pink py-3 px-6">
           <p>Get in touch</p>
         </button>
       </div>

@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ setSelectedTag, selectedTag }) => {
   return (
     <section className="urbanist-regular space-y-5 py-8 ">
       <div className="lg:w-[50%] space-y-2">
-        <h1 className="urbanist-medium dark:text-neon-pink">OUR CREATIONS</h1>
+        <h1 className="urbanist-medium dark:text-neon-pink ">OUR CREATIONS</h1>
         <h5 className="alt leading-snug">
           At Lexxa, we are passionate about creating stunning, one-of-a-kind
           fashion pieces that make you feel confident and beautiful. Here is a
