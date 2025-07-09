@@ -160,7 +160,7 @@ This structure ensures your styles are DRY, consistent, and easy to maintain. Fo
 
 1. **Clone the repository:**
    ```bash
-   git clone [<repo-url>](https://github.com/Cedar-81-alt/lexa-studios.git)
+   git clone https://github.com/Cedar-81-alt/lexa-studios.git
    cd lexa-studios
    ```
 2. **Install dependencies:**
