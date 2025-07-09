@@ -1,5 +1,7 @@
 # Lexa Studios Web App
 
+**Repository:** [https://github.com/Cedar-81-alt/lexa-studios.git](https://github.com/Cedar-81-alt/lexa-studios.git)
+
 A modern, creative portfolio and services website built with React, Vite, and TypeScript. This project is designed for easy navigation, maintainability, and scalability, making it simple for new contributors to understand and extend.
 
 ---
@@ -225,8 +227,10 @@ Please follow the existing code style and structure. For major changes, open an 
 ---
 
 ## 🙏 Credits
+
 - Lexa Studios team
-- [Your name or contributors]
+- [Cedar-81](https://github.com/Cedar-81)
+- [emmeax](https://github.com/emmeax)
 
 ---
 
